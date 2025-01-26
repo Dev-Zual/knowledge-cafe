@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "coverImage": "cover1.jpg",
+    "authorImg": "author1.jpg",
+    "postedDate": "2025-01-20",
+    "readingTime": 5,
+    "title": "The Future of AI in Daily Life",
+    "hashtag": ["#AI", "#Technology", "#Future"]
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "coverImage": "cover2.jpg",
+    "authorImg": "author2.jpg",
+    "postedDate": "2025-01-18",
+    "readingTime": 8,
+    "title": "Mastering Productivity Hacks",
+    "hashtag": ["#Productivity", "#SelfImprovement", "#Tips"]
+  },
+  {
+    "id": 3,
+    "name": "Alex Johnson",
+    "coverImage": "cover3.jpg",
+    "authorImg": "author3.jpg",
+    "postedDate": "2025-01-15",
+    "readingTime": 6,
+    "title": "Exploring the World of Cryptocurrency",
+    "hashtag": ["#Crypto", "#Finance", "#Blockchain"]
+  },
+  {
+    "id": 4,
+    "name": "Emily Brown",
+    "coverImage": "cover4.jpg",
+    "authorImg": "author4.jpg",
+    "postedDate": "2025-01-12",
+    "readingTime": 10,
+    "title": "Top 10 Travel Destinations for 2025",
+    "hashtag": ["#Travel", "#Wanderlust", "#Destinations"]
+  },
+  {
+    "id": 5,
+    "name": "Michael Lee",
+    "coverImage": "cover5.jpg",
+    "authorImg": "author5.jpg",
+    "postedDate": "2025-01-10",
+    "readingTime": 7,
+    "title": "Healthy Eating: Recipes for Beginners",
+    "hashtag": ["#Health", "#Food", "#Recipes"]
+  }
+]
