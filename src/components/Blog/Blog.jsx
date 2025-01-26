@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 const Blog = ({ blog }) => {
   const { title, name, coverImage } = blog;
   return (
@@ -7,6 +8,10 @@ const Blog = ({ blog }) => {
       <p>{name}</p>
     </div>
   );
+};
+
+Blog.propTypes = {
+  blog: PropTypes.object.isRequired,
 };
 
 export default Blog;
