@@ -12,7 +12,7 @@ const Blogs = () => {
   }, []);
 
   return (
-    <div className="md:w-2/3">
+    <div className="md:w-2/3 space-y-5">
       {blogs.map((blog) => (
         <Blog key={blog.id} blog={blog}></Blog>
       ))}
