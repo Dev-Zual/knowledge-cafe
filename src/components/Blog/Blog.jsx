@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { CiBookmark } from "react-icons/ci";
-const Blog = ({ blog, handleAddBookMark }) => {
+const Blog = ({ blog, handleAddBookMark, handleReadingTime }) => {
   const {
     title,
     name,
@@ -31,7 +31,7 @@ const Blog = ({ blog, handleAddBookMark }) => {
         <div className="space-x-2 flex items-center font-semibold text-black/60">
           <span>{readingTime} min read</span>
           <button
-            onClick={() => handleAddBookMark(title, readingTime)}
+            onClick={() => handleAddBookMark(blog)}
             className="text-2xl cursor-pointer"
           >
             <CiBookmark />
@@ -46,9 +46,13 @@ const Blog = ({ blog, handleAddBookMark }) => {
           </span>
         ))}
       </div>
-      <a className="underline text-blue-500" href="#">
+      <button
+        onClick={() => handleReadingTime(readingTime)}
+        className="underline text-blue-500 cursor-pointer"
+        href="#"
+      >
         Mark as read
-      </a>
+      </button>
     </div>
   );
 };
@@ -56,6 +60,7 @@ const Blog = ({ blog, handleAddBookMark }) => {
 Blog.propTypes = {
   blog: PropTypes.object.isRequired,
   handleAddBookMark: PropTypes.func.isRequired,
+  handleReadingTime: PropTypes.func.isRequired,
 };
 
 export default Blog;
