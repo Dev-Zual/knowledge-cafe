@@ -9,6 +9,7 @@ const Blog = ({ blog, handleAddBookMark, handleReadingTime }) => {
     postedDate,
     readingTime,
     hashtag,
+    id,
   } = blog;
   return (
     <div className="space-y-7">
@@ -47,7 +48,7 @@ const Blog = ({ blog, handleAddBookMark, handleReadingTime }) => {
         ))}
       </div>
       <button
-        onClick={() => handleReadingTime(readingTime)}
+        onClick={() => handleReadingTime(readingTime, id)}
         className="underline text-blue-500 cursor-pointer"
         href="#"
       >

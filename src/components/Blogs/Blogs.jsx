@@ -11,7 +11,7 @@ const Blogs = ({ handleAddBookMark, handleReadingTime }) => {
   }, []);
 
   return (
-    <div className="md:w-2/3 space-y-5">
+    <div className="md:w-2/3 space-y-5 ">
       {blogs.map((blog) => (
         <Blog
           key={blog.id}
