@@ -31,7 +31,7 @@ const Blog = ({ blog, handleAddBookMark }) => {
         <div className="space-x-2 flex items-center font-semibold text-black/60">
           <span>{readingTime} min read</span>
           <button
-            onClick={() => handleAddBookMark(title)}
+            onClick={() => handleAddBookMark(title, readingTime)}
             className="text-2xl cursor-pointer"
           >
             <CiBookmark />
