@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { CiBookmark } from "react-icons/ci";
 const Blog = ({ blog }) => {
   const {
     title,
@@ -23,19 +24,23 @@ const Blog = ({ blog }) => {
           </div>
           <div>
             <h4 className="text-3xl font-semibold">{name}</h4>
-            <p>{postedDate}</p>
+            <p className="text-black/60">{postedDate}</p>
           </div>
         </div>
 
-        <div className="space-x-2">
+        <div className="space-x-2 flex items-center font-semibold text-black/60">
           <span>{readingTime} min read</span>
-          <button>b</button>
+          <button className="text-2xl cursor-pointer">
+            <CiBookmark />
+          </button>
         </div>
       </div>
       <h1 className="text-4xl font-semibold">{title}</h1>
       <div className="space-x-2">
         {hashtag.map((tag) => (
-          <span key={tag}>{tag}</span>
+          <span className="text-black/60" key={tag}>
+            {tag}
+          </span>
         ))}
       </div>
       <a className="underline text-blue-500" href="#">
